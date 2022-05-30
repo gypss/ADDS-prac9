@@ -6,14 +6,14 @@ using namespace std;
 
 string Polish::calculate(vector<string> input, int length) {
 
-	string expression = this->convert(input, length);
-
 	this->makeStacks(input, length);
 
 	if (!this->isValid()) {
 		return "Error";
 	}
-	else
+
+	string expression = this->convert(input, length);
+
 	return expression;
 
 }
